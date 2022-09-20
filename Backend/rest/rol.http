@@ -1,0 +1,26 @@
+@host = http://localhost:4000
+
+###
+POST {{host}}/rol/create
+Content-Type: application/json
+
+{
+    "ROL": "ESTILISTA"
+}
+
+###
+GET {{host}}/rols/all
+Content-Type: application/json
+
+###
+GET {{host}}/rol/2
+Content-Type: application/json
+
+###
+PUT {{host}}/rolupd/3
+Content-Type: application/json
+
+{
+    "ROL": "ESTILISTA"
+}
+

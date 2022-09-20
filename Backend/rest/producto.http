@@ -1,0 +1,36 @@
+@host = http://localhost:4000
+
+###
+POST {{host}}/producto/create
+Content-Type: application/json
+
+{
+    "PRODUCTO": "AMPOLLA DE CUIDADO",
+    "STOCK": "1",
+    "CANTIDAD": "10",
+    "PRECIO_V": "125",
+    "CANTIDAD_U":"500",
+    "PRECIO_C": "125"
+}
+
+###
+GET {{host}}/productos/all
+Content-Type: application/json
+
+###
+GET {{host}}/producto/1
+Content-Type: application/json
+
+###
+PUT {{host}}/productoupd/4
+Content-Type: application/json
+
+{
+    "PRODUCTO": "AMPOLLETA PARA MANTENER EL CABELLO ONDULADO",
+      "STOCK": "1",
+      "CANTIDAD": "10",
+      "PRECIO_V": "125",
+      "CANTIDAD_U": "10",
+    "PRECIO_C": "125"
+}
+

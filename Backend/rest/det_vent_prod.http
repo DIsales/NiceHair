@@ -1,0 +1,30 @@
+@host = http://localhost:4000
+
+###
+POST {{host}}/detallevp/create
+Content-Type: application/json
+
+{
+    "IDVENTA": "1",
+    "IDPRODUCTO": "1",
+    "CANTIDAD": "10"
+}
+
+###
+GET {{host}}/detallevps/all
+Content-Type: application/json
+
+###
+GET {{host}}/detallevp/1
+Content-Type: application/json
+
+###
+PUT {{host}}/detallevpupd/1
+Content-Type: application/json
+
+{
+    "IDVENTA": "1",
+    "IDPRODUCTO": "1",
+    "CANTIDAD": "10"
+}
+

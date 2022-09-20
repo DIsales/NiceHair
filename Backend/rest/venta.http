@@ -1,0 +1,44 @@
+@host = http://localhost:4000
+
+###
+POST {{host}}/venta/create
+Content-Type: application/json
+
+{
+    "IDCLIENTE": "4",
+    "IDESTILISTA":"2",
+    "IDSERVICIO":"1"
+
+}
+
+###
+GET {{host}}/ventas/all
+Content-Type: application/json
+
+###
+GET {{host}}/ventacli/all
+Content-Type: application/json
+
+###
+GET {{host}}/ventaesti/all
+Content-Type: application/json
+
+###
+GET {{host}}/venta/1
+Content-Type: application/json
+
+###
+PUT {{host}}/ventaupd/1
+Content-Type: application/json
+
+{
+    "IDCLIENTE": "4",
+    "IDESTILISTA":"2",
+    "IDSERVICIO":"1"
+}
+
+###
+PUT {{host}}/ventacobro/1
+Content-Type: application/json
+
+

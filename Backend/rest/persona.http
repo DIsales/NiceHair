@@ -1,0 +1,38 @@
+@host = http://localhost:4000
+
+###
+POST {{host}}/persona/create
+Content-Type: application/json
+
+{
+    "PRIMERNOMBRE": "JENIFFER", 
+    "SEGUNDONOMBRE": "MARISELDA", 
+    "PRIMERAPELLIDO": "ISALES",
+    "SEGUNDOAPELLIDO": "MARROQUIN", 
+    "DPI": "1234567892101",
+    "DIRECCION": "JALAPA",
+    "IDTIPO_PERSONA":"2"
+}
+
+###
+GET {{host}}/personas/all
+Content-Type: application/json
+
+###
+GET {{host}}/persona/1
+Content-Type: application/json
+
+###
+PUT {{host}}/personaupd/1
+Content-Type: application/json
+
+{
+    "PRIMERNOMBRE": "BYRON", 
+    "SEGUNDONOMBRE": "DANIEL", 
+    "PRIMERAPELLIDO": "ISALES",
+    "SEGUNDOAPELLIDO": "MARROQUIN", 
+    "DPI": "3394961932101",
+    "DIRECCION": "JALAPA",
+    "IDTIPO_PERSONA":"3"
+}
+

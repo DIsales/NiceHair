@@ -1,0 +1,37 @@
+@host = http://localhost:4000
+
+###
+POST {{host}}/usuario/create
+Content-Type: application/json
+
+{
+    "USUARIO": "JISALES",
+    "PASSWORD": "JEN",
+    "IDROL":"3",
+    "IDPERSONA": "2"
+}
+
+###
+GET {{host}}/usuarios/all
+Content-Type: application/json
+
+###
+GET {{host}}/usuario/2
+Content-Type: application/json
+
+###
+PUT {{host}}/usuarioupd/2
+Content-Type: application/json
+
+{
+    "USUARIO": "JENIFFER",
+    "PASSWORD": "JEN",
+    "IDROL":"3",
+    "IDPERSONA": "2"
+}
+
+
+###
+GET {{host}}/usuario/login
+Content-Type: application/json
+

@@ -1,0 +1,26 @@
+@host = http://localhost:4000
+
+###
+POST {{host}}/tpersona/create
+Content-Type: application/json
+
+{
+    "TIPO_PERSONA": "ADMINISTRADOR"
+}
+
+###
+GET {{host}}/tpersonas/all
+Content-Type: application/json
+
+###
+GET {{host}}/tpersona/2
+Content-Type: application/json
+
+###
+PUT {{host}}/tpersonaupd/2
+Content-Type: application/json
+
+{
+    "TIPO_PERSONA": "EMPLEADO"
+}
+
